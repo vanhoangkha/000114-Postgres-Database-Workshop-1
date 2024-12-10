@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Roles và Users :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -936,34 +936,34 @@
 
 <h4 id="exploring-existing-roles">Exploring Existing Roles</h4>
 <p>Trong pgAdmin, hãy mở rộng mục <strong>Login/Group Roles</strong> trong PostgreSQL server.</p>
-<p><img src="/images/2/2-5/26.png" alt="role"></p>
+<p><img alt="role" src="/images/2/2-5/26.png"></p>
 <p>Bạn sẽ thấy các [default roles][https://www.postgresql.org/docs/11/default-roles.html) đã có và được xác định trong cụm PostgreSQL này. Lưu ý rằng có 2 loại biểu tượng mà pgAdmin sử dụng cho roles. Nếu roles có đặc quyền <strong>LOIGN</strong> thì roles đó sẽ được xác định là người dùng (chẳng hạn như rdsadmin và masteruser). Nếu không, nó sẽ được hiển thị với biểu tượng group.\</p>
 <p>Bạn cũng có thể truy xuất thông tin tương tự bằng cách chạy truy vấn sql sau:</p>
 <p><code> SELECT rolname FROM pg_roles;</code></p>
-<p><img src="/images/2/2-5/27.png" alt="role"></p>
+<p><img alt="role" src="/images/2/2-5/27.png"></p>
 <h4 id="tạo-role">Tạo Role</h4>
 <ol>
 <li>
 <p>Nhấp chuột phải vào <strong>ĐLogin/Group Roles</strong>, sau đó chọn <strong>Create</strong>, sau đó chọn <strong>Login/Group role</strong>:
-<img src="/images/2/2-5/28.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/28.png"></p>
 </li>
 <li>
 <p>Đặt tên cho role: <code>first_role</code>.
-<img src="/images/2/2-5/28.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/28.png"></p>
 </li>
 <li>
 <p>Duyệt qua các tab khác của hộp thoại Create Role nhưng không thay đổi bất cứ điều gì. Kết thúc trên tab SQL. Sau đó nhấp vào <strong>Save</strong>.
-<img src="/images/2/2-5/30.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/30.png"></p>
 </li>
 <li>
 <p>Nhấp chuột phải vào <strong>first_database</strong> và chọn biểu tượng <strong>Query Tool</strong>.
-<img src="/images/2/2-5/31.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/31.png"></p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL sau để cấp một số <a href="https://www.postgresql.org/docs/11/ddl-priv.html">đặc quyền</a> cho vai trò mới của bạn.</p>
 <pre tabindex="0"><code>GRANT USAGE ON SCHEMA first_schema TO first_role;
 GRANT SELECT ON first_schema.first_table TO first_role;
-</code></pre><p><img src="/images/2/2-5/32.png" alt="role"></p>
+</code></pre><p><img alt="role" src="/images/2/2-5/32.png"></p>
 </li>
 </ol>
 
@@ -974,27 +974,27 @@ GRANT SELECT ON first_schema.first_table TO first_role;
 <ol>
 <li>
 <p>Nhấp chuột phải vào <strong>Login/Group Roles</strong>, sau đó chọn <strong>Create</strong>, sau đó chọn <strong>Login/Group role</strong>:
-<img src="/images/2/2-5/33.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/33.png"></p>
 </li>
 <li>
 <p>Đặt tên cho role <code>first_user</code>.
-<img src="/images/2/2-5/34.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/34.png"></p>
 </li>
 <li>
 <p>Click on the <strong>Definition</strong> tab. Then enter a Password you will remember.
-<img src="/images/2/2-5/35.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/35.png"></p>
 </li>
 <li>
 <p>Nhấp vào tab <strong>Privileges</strong>. Sau đó đặt <strong>Can login?</strong> thành <strong>Yes</strong>
-<img src="/images/2/2-5/36.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/36.png"></p>
 </li>
 <li>
 <p>Nhấp vào tab <strong>Membership</strong>. Sau đó nhấp vào trường Roles và chọn <code>first_role</code>
-<img src="/images/2/2-5/37.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/37.png"></p>
 </li>
 <li>
 <p>Cuối cùng, nhấp vào tab <strong>SQL</strong> để xem <strong>SQL</strong> trông như thế nào. Sau đó <strong>Save</strong>
-<img src="/images/2/2-5/38.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/38.png"></p>
 </li>
 </ol>
 <p>Bây giờ, nhấp chuột phải vào nút <strong>Servers</strong> và chọn <strong>Create</strong>, sau đó nhấp vào <strong>Server</strong></p>
@@ -1004,21 +1004,21 @@ GRANT SELECT ON first_schema.first_table TO first_role;
 </li>
 <li>
 <p>Nhấp vào tab <strong>Connection</strong>. Nhập RDS endpoint cho tên máy chủ (xem ghi chú bên dưới nếu bạn cần trợ giúp). Nhập <code>first_user</code> cho Tên người dùng. Nhập <strong>Mật khẩu</strong> cho người dùng mới. Sau đó nhấp vào <strong>Save</strong>.
-<img src="/images/2/2-5/39.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/39.png"></p>
 </li>
 <li>
 <p>Mở rộng nút <strong>first_user_connection</strong>, sau đó mở rộng <strong>Databases</strong>. Nhấp chuột phải vào <strong>first_database</strong>, sau đó chọn <strong>Query Tool</strong> để mở phiên với tư cách first_user.
-<img src="/images/2/2-5/40.png" alt="role"></p>
+<img alt="role" src="/images/2/2-5/40.png"></p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL này
-<code>select * from first_schema.first_table;</code>
-<img src="/images/2/2-5/41.png" alt="role"></p>
+<code> select * from first_schema.first_table; </code>
+<img alt="role" src="/images/2/2-5/41.png"></p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL này để kiểm tra bảng mà chúng ta chưa cấp cho <strong>first_role</strong>:
 <code>select * from first_schema.second_table;</code>
-<img src="/images/2/2-5/42.png" alt="role">
+<img alt="role" src="/images/2/2-5/42.png">
 
 <div class="notices tip" ><p>Đọc thêm về <a href="https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/">các phương pháp hay nhất để quản lý User/Role dùng PostgreSQL</a></p>
 </div>
@@ -1490,19 +1490,19 @@ GRANT rds_superuser TO new_dba_user;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

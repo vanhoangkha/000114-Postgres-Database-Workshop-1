@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Using pgAdmin4 to connect to RDS PostgreSQL :: AWS RDS PostgreSQL</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -931,11 +931,11 @@ You can use the open-source tool <strong>pgAdmin4</strong> to connect to your RD
 </li>
 <li>
 <p>On the <strong>Dashboard</strong> tab, choose <strong>Add New Server.</strong> <br>
-<img src="/images/4/4-1/14.png" alt="connecting"></p>
+<img alt="connecting" src="/images/4/4-1/14.png"></p>
 </li>
 <li>
 <p>In the <strong>Create - Server</strong> dialog box, type a name on the <strong>General</strong> tab to identify the server in pgAdmin4.
-<img src="/images/4/4-1/1.png" alt="connecting"></p>
+<img alt="connecting" src="/images/4/4-1/1.png"></p>
 </li>
 <li>
 <p>In the <strong>Connection</strong> tab, type the following information from your DB instance:</p>
@@ -944,7 +944,7 @@ You can use the open-source tool <strong>pgAdmin4</strong> to connect to your RD
 <li>For <strong>Port</strong>, type the assigned port.</li>
 <li>For <strong>Username</strong>, type the user name that you entered when you created the DB instance.</li>
 <li>For <strong>Password</strong>, type the password that you entered when you created the DB instance.
-<img src="/images/4/4-1/2.png" alt="connecting"></li>
+<img alt="connecting" src="/images/4/4-1/2.png"></li>
 </ul>
 </li>
 <li>
@@ -954,13 +954,13 @@ You can use the open-source tool <strong>pgAdmin4</strong> to connect to your RD
 <li>For <strong>Port</strong>: The SSH port number.</li>
 <li>For <strong>Username</strong>: The username that you use to SSH into the bastion host.</li>
 <li>For <strong>Identity file</strong>: choose the keypair that you have selected when create ec2 bastion host.
-<img src="/images/4/4-1/3.png" alt="connecting"></li>
+<img alt="connecting" src="/images/4/4-1/3.png"></li>
 </ul>
 </li>
 <li>
 <p>Choose <strong>Save</strong>.
 The server has been added to the pgAdmin4 and its dashboard is visible on the screen:
-<img src="/images/4/4-1/6.png" alt="connecting">
+<img alt="connecting" src="/images/4/4-1/6.png">
 
 <div class="notices tip" ><p>If you have any problems connecting, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToPostgreSQLInstance.html#USER_ConnectToPostgreSQLInstance.Troubleshooting">Troubleshooting connections to your RDS for PostgreSQL instance</a>.</p>
 </div>
@@ -1406,19 +1406,19 @@ The server has been added to the pgAdmin4 and its dashboard is visible on the sc
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

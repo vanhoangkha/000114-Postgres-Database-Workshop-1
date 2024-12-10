@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Session parameters :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -923,48 +923,48 @@
 	<p>Phần này sẽ nói về <a href="https://www.postgresql.org/docs/11/runtime-config.html">PostgreSQL Parameters</a> . Cụ thể, nó sẽ tập trung vào các thông số có thể thay đổi ở cấp độ phiên. Đối với các tham số trên toàn hệ thống, bạn sẽ tận dụng cơ chế Parameter Group của RDS/Aurora.</p>
 <ol>
 <li>Trong pgAdmin, nhấp vào nút rdspg-fcj-labs, sau đó nhấp vào <strong>Dashboard</strong>, sau đó nhấp vào <strong>Configuration</strong>.
-<img src="/images/2/2-7/49.png" alt="parametter"></li>
+<img alt="parametter" src="/images/2/2-7/49.png"></li>
 </ol>
 <p>Phần này hiển thị cho bạn cài đặt hiện tại của tất cả <strong>PostgreSQL parameter settings</strong>.</p>
 <ol start="2">
 <li>Trong thanh tìm kiếm, gõ <strong><code>search</code></strong>
-<img src="/images/2/2-7/50.png" alt="parametter"></li>
+<img alt="parametter" src="/images/2/2-7/50.png"></li>
 </ol>
 <p>Lọc danh sách cài đặt tham số.</p>
 <ol start="3">
 <li>Nhấp vào <strong>first_database</strong>, sau đó chọn biểu tượng <strong>Query Tool</strong>. Sau đó dán và chạy SQL sau:
 <code>SELECT * FROM pg_settings where context = 'user';</code>
-<img src="/images/2/2-7/51.png" alt="parametter"></li>
+<img alt="parametter" src="/images/2/2-7/51.png"></li>
 </ol>
 <p>Lệnh này hiển thị cho bạn các phiên tham số có thể được thay đổi cho một phiên cũng như cài đặt hiện tại của chúng.</p>
 <ol start="4">
 <li>
 <p>Dán và chạy câu lệnh SQL sau:
 <code>show search_path</code>
-<img src="/images/2/2-7/52.png" alt="parametter">
+<img alt="parametter" src="/images/2/2-7/52.png">
 Lệnh <code>SHOW</code> là một cách khác để xem giá trị hiện tại của cài đặt của bạn.</p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL sau:
 <code>show all</code>
-<img src="/images/2/2-7/53.png" alt="parametter">
+<img alt="parametter" src="/images/2/2-7/53.png">
 Lệnh này chỉ cho bạn một cách khác để xem giá trị hiện tại của tất cả cài đặt tham số của bạn.</p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL sau:
 <code>select * from first_table;</code>
-<img src="/images/2/2-7/54.png" alt="parametter">
+<img alt="parametter" src="/images/2/2-7/54.png">
 Lệnh này không thành công vì PostgreSQL không thể tìm thấy bảng có tên <strong>first_table</strong> trong các lược đồ ở <strong>search_path</strong> hiện tại.\</p>
 </li>
 <li>
 <p>Dán và chạy câu lệnh SQL sau:
 <code>SET search_path TO first_schema, public;   </code>
-<img src="/images/2/2-7/55.png" alt="parametter"></p>
+<img alt="parametter" src="/images/2/2-7/55.png"></p>
 </li>
 <li>
 <p>Dán và chạy lại câu lệnh SQL sau:
 <code>select * from first_table;</code>
-<img src="/images/2/2-7/56.png" alt="parametter">
+<img alt="parametter" src="/images/2/2-7/56.png">
 Lệnh này hiện đã hoạt động vì chúng ta đã cập nhật cài đặt tham số <strong>search_path</strong>.</p>
 </li>
 </ol>
@@ -1414,19 +1414,19 @@ Lệnh này hiện đã hoạt động vì chúng ta đã cập nhật cài đ�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

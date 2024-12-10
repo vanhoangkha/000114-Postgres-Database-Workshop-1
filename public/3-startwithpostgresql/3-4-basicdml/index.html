@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Basic DML (Data Manipulation Language) :: AWS RDS PostgreSQL</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -937,18 +937,18 @@
 <ol>
 <li>
 <p>In your pgAdmin tool, right click on <code>first_table</code> under your <code>first_schema</code> inside your <code>first_database</code>. Choose Scripts, then SELECT Script
-<img src="/images/2/2-4/insert_data.png" alt="insert data">
+<img alt="insert data" src="/images/2/2-4/insert_data.png">
 This will create a boilerplate insert statement for our table that we can edit.
-<img src="/images/2/2-4/insert_data_1.png" alt="insert data"></p>
+<img alt="insert data" src="/images/2/2-4/insert_data_1.png"></p>
 </li>
 <li>
 <p>Highlight the ? placeholder and replace it with <code>'my first row'</code>. Don&rsquo;t forget to use the <code>'</code> single-quote mark to surround your text.
-<img src="/images/2/2-4/insert_data_2.png" alt="insert data"></p>
+<img alt="insert data" src="/images/2/2-4/insert_data_2.png"></p>
 </li>
 <li>
 <p>Click on the Play icon to execute this command.
 This will run your command and insert your first row.
-<img src="/images/2/2-4/insert_data_2.png" alt="insert data">
+<img alt="insert data" src="/images/2/2-4/insert_data_2.png">
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -977,7 +977,7 @@ This will run your command and insert your first row.
     </div>
     <div class="expand-content" style="display: none;">
         <p>By default, pgAdmin is set with AutoCommit on, so, yes, this new row should be committed. You can see/change the AutoCommit mode by clicking on the icon next to the Play icon in the pgAdmin Query Editor:
-<img src="/images/2/2-4/insert_data_3.png" alt="insert data"></p>
+<img alt="insert data" src="/images/2/2-4/insert_data_3.png"></p>
 
     </div>
 </div></p>
@@ -987,13 +987,13 @@ This will run your command and insert your first row.
 <ol>
 <li>
 <p>In your pgAdmin tool, right click on <code>first_table</code> under your <code>first_schema</code> inside your <code>first_database</code>. Choose Scripts, then SELECT Script
-<img src="/images/2/2-4/select.png" alt="select"></p>
+<img alt="select" src="/images/2/2-4/select.png"></p>
 </li>
 <li>
 <p>Click on the Play icon to execute this command.
-<img src="/images/2/2-4/select_1.png" alt="select">
+<img alt="select" src="/images/2/2-4/select_1.png">
 This will run your command and you should see your first row.
-<img src="/images/2/2-4/select_2.png" alt="select"></p>
+<img alt="select" src="/images/2/2-4/select_2.png"></p>
 </li>
 </ol>
 <h4 id="create-table-second-table-if-not-exists">Create table second table if not exists</h4>
@@ -1005,7 +1005,7 @@ This will run your command and you should see your first row.
       col_short_str varchar(100),
       col_datetime timestamp(0) without time zone
     );
-</code></pre><img src="/images/2/2-4/add_table.png" alt="add table"></li>
+</code></pre><img alt="add table" src="/images/2/2-4/add_table.png"></li>
 </ol>
 <h4 id="insert-into-our-second-table">Insert into our second table</h4>
 <ol>
@@ -1014,7 +1014,7 @@ This will run your command and you should see your first row.
   col_money, col_short_str, col_datetime)
   VALUES (40.25, &#39;short string&#39;, TIMESTAMP &#39;2004-10-19 10:23:54&#39;) 
 returning col_pk;
-</code></pre><img src="/images/2/2-4/insert_data_to_table2.png" alt="insert data to table"></li>
+</code></pre><img alt="insert data to table" src="/images/2/2-4/insert_data_to_table2.png"></li>
 </ol>
 <p>Notice that because we specified <code>returning col_pk</code>, we see the auto-generated unique value of col_pk in the Data Output section. Remember that when we created second_table that we specified that col_pk used the <code>SERIAL</code> datatype (which is like the AUTO_INCREMENT datatype in other database engines).</p>
 <h4 id="experimenting-with-datatype-conversions">Experimenting with Datatype conversions</h4>
@@ -1022,7 +1022,7 @@ returning col_pk;
 <li>
 <p>In one of the open query editors, paste the following select command and click the Play icon to execute it:</p>
 <pre tabindex="0"><code>SELECT &#39;40.25&#39; col1, 40.25 col2;
-</code></pre><p><img src="/images/2/2-4/datatype.png" alt="datatype">
+</code></pre><p><img alt="datatype" src="/images/2/2-4/datatype.png">
 Notice in the Data Output section that <code>col1</code> is a text datatype while <code>col2</code> is a numeric datatype.
 
 <div class="notices note" ><p>Unlike certain other databases (specifically Oracle), you do not need to have a FROM clause in your SELECT statement. So if you are in the habit of writing <code>SELECT 'something' FROM dual</code>; in Oracle, you can leave the <code>FROM dual</code> off in PostgreSQL. There is no <code>dual</code> table in PostgreSQL.</p>
@@ -1032,7 +1032,7 @@ Notice in the Data Output section that <code>col1</code> is a text datatype whil
 <li>
 <p>Now run this query:</p>
 <pre tabindex="0"><code>SELECT &#39;40.25&#39; col1, 40.25 col2, &#39;40.25&#39;::numeric col3, numeric &#39;40.25&#39; col4, cast(&#39;40.25&#39; as numeric) col5;
-</code></pre><p><img src="/images/2/2-4/datatype_1.png" alt="datatype"></p>
+</code></pre><p><img alt="datatype" src="/images/2/2-4/datatype_1.png"></p>
 </li>
 </ol>
 <p>Notice in the Data Output section that <code>col3</code>, <code>col4</code>, and `col</p>
@@ -1478,19 +1478,19 @@ Notice in the Data Output section that <code>col1</code> is a text datatype whil
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

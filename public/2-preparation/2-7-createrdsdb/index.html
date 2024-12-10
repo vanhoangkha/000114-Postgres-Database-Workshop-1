@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create an RDS PostgreSQL DB :: AWS RDS PostgreSQL</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -932,7 +932,7 @@
 <ol>
 <li>
 <p>Open the <strong>Amazon RDS</strong> <a href="https://console.aws.amazon.com/rds/">console</a>.</p>
-<p><img src="/images/preparation/db/1.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/1.png"></p>
 </li>
 <li>
 <p>Click <strong>Create database</strong>.</p>
@@ -942,15 +942,15 @@
 </li>
 <li>
 <p>For <strong>Version</strong>, select the version of PostgreSQL that you want to use.</p>
-<p><img src="/images/preparation/db/2.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/2.png"></p>
 </li>
 <li>
 <p>For <strong>Template</strong>, select a template for your DB instance. A template is a pre-configured configuration for a DB instance.</p>
-<p><img src="/images/preparation/db/3.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/3.png"></p>
 </li>
 <li>
 <p>For <strong>Availability</strong> and <strong>Durability</strong>, For DB instance identifier, enter a name for your DB instance.</p>
-<p><img src="/images/preparation/db/4.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/4.png"></p>
 </li>
 <li>
 <p>For <strong>DB instance identifier</strong>, enter a unique name for your database instance.</p>
@@ -960,38 +960,38 @@
 </li>
 <li>
 <p>For <strong>Master password</strong>, enter a strong password for the master user of your database instance.</p>
-<p><img src="/images/preparation/db/5.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/5.png"></p>
 </li>
 <li>
 <p>For <strong>DB instance class</strong>, select the instance class that you want to use for your database instance. The instance class will determine the amount of CPU and memory that is allocated to your database instance.</p>
-<p><img src="/images/preparation/db/6.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/6.png"></p>
 </li>
 <li>
 <p>For <strong>Storage</strong>, select the amount of storage that you want to allocate for your database instance.</p>
-<p><img src="/images/preparation/db/7.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/7.png"></p>
 </li>
 <li>
 <p>For <strong>Connectivity</strong>, select option <strong>Connect to a EC2 compute resource</strong>, then choose your <strong>App server</strong> instance which you have created in the earier step.</p>
-<p><img src="/images/preparation/db/8.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/8.png"></p>
 </li>
 <li>
 <p>For <strong>DB subnet group</strong>, select the DB subnet group that you want to use for your DB instance.</p>
 </li>
 <li>
 <p>For <strong>VPC security groups</strong>, select the security groups that you want to use for your DB instance.</p>
-<p><img src="/images/preparation/db/9.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/9.png"></p>
 </li>
 <li>
 <p>Expand <strong>Additional configuration</strong>, Enter <strong>5432</strong> for <strong>database port</strong></p>
-<p><img src="/images/preparation/db/10.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/10.png"></p>
 </li>
 <li>
 <p>For <strong>Database authentication</strong>, choose option that you want to use</p>
-<p><img src="/images/preparation/db/11.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/11.png"></p>
 </li>
 <li>
 <p>For <strong>Monitoring</strong>, select the monitoring options that you want to use for your database instance</p>
-<p><img src="/images/preparation/db/12.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/12.png"></p>
 </li>
 <li>
 <p>Expand <strong>Additional configuration</strong>:</p>
@@ -1003,13 +1003,13 @@
 </li>
 <li>
 <p>For <strong>DB parameter group</strong>, leave everything with default setting</p>
-<p><img src="/images/preparation/db/13.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/13.png"></p>
 </li>
 </ul>
 <ol start="19">
 <li>
 <p>For <strong>Backup</strong>, select the backup options that you want to use for your database instance.</p>
-<p><img src="/images/preparation/db/14.png" alt="Create EC2 SG"></p>
+<p><img alt="Create EC2 SG" src="/images/preparation/db/14.png"></p>
 </li>
 <li>
 <p>Click <strong>Create database</strong>.</p>
@@ -1481,19 +1481,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

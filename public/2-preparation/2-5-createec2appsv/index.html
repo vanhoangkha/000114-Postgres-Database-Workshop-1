@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create EC2 instance for app server :: AWS RDS PostgreSQL</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -935,19 +935,19 @@
 </li>
 <li>
 <p>Click <strong>Launch Instance</strong>.</p>
-<p><img src="/images/preparation/ec2/1.png" alt="Create EC2 instance"></p>
+<p><img alt="Create EC2 instance" src="/images/preparation/ec2/1.png"></p>
 </li>
 <li>
 <p>Choose an <strong>AMI</strong>. For an app server, you can choose a <strong>Linux AMI</strong>, such as <strong>Amazon Linux 2</strong>.</p>
 </li>
 <li>
 <p>Choose an <strong>instance type</strong>. The instance type that you choose will depend on the requirements of your app server. For example, if you are running a high-traffic website, you will need a larger instance type with more CPU and memory.</p>
-<p><img src="/images/preparation/ec2/2.png" alt="Create EC2 instance"></p>
-<p><img src="/images/preparation/ec2/4.png" alt="Create EC2 instance"></p>
+<p><img alt="Create EC2 instance" src="/images/preparation/ec2/2.png"></p>
+<p><img alt="Create EC2 instance" src="/images/preparation/ec2/4.png"></p>
 </li>
 <li>
 <p>For <strong>Key Pair</strong>,choose your keypair you have created or click <strong>Create new key pair</strong></p>
-<p><img src="/images/preparation/ec2/5.png" alt="Create EC2 instance"></p>
+<p><img alt="Create EC2 instance" src="/images/preparation/ec2/5.png"></p>
 </li>
 <li>
 <p>Configure the instance details. This includes things like the number of instances to launch, the network configuration, and the storage configuration.</p>
@@ -960,11 +960,11 @@
 <li><strong>Enable</strong> Auto-assign public IP</li>
 <li>Add a <strong>security group</strong> for EC2 app server that you have created easier step . <em>A security group is a firewall that controls incoming and outgoing traffic to your instance.</em></li>
 </ul>
-<p><img src="/images/preparation/ec2/6.png" alt="Create EC2 instance"></p>
+<p><img alt="Create EC2 instance" src="/images/preparation/ec2/6.png"></p>
 </li>
 <li>
 <p><strong>Review</strong> and <strong>launch</strong> the instance</p>
-<p><img src="/images/preparation/ec2/7.png" alt="Create 7C2 instance"></p>
+<p><img alt="Create 7C2 instance" src="/images/preparation/ec2/7.png"></p>
 </li>
 </ol>
 <p><em>Once the instance is launched, you can connect to it using an SSH client, such as MobaXterm or Putty. Once you are connected, you can install your app server and deploy your application.</em></p>
@@ -1410,19 +1410,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

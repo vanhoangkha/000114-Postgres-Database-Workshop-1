@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Database và Schemas :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1711394734" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1711394734" rel="stylesheet">
-    <link href="/css/hybrid.css?1711394734" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1711394734" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1711394734" rel="stylesheet">
-    <link href="/css/auto-complete.css?1711394734" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1711394734" rel="stylesheet">
-    <link href="/css/theme.css?1711394734" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1711394734" rel="stylesheet">
+    <link href="/css/nucleus.css?1733824272" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733824272" rel="stylesheet">
+    <link href="/css/hybrid.css?1733824272" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733824272" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733824272" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733824272" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733824272" rel="stylesheet">
+    <link href="/css/theme.css?1733824272" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733824272" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1711394734" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733824272" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1711394734"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733824272"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1711394734"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1711394734"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733824272"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733824272"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1711394734"></script>
+<script type="text/javascript" src="/js/search.js?1733824272"></script>
 
     
   </div>
@@ -829,7 +829,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>30-01-2022</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -938,7 +938,7 @@
 <ol>
 <li>
 <p>Trong pgAdmin tool, hãy nhấp vào <em>&gt;</em> ở phía trước <strong>rdspg-fcj-labs</strong> để mở rộng nó.
-<img src="/images/2/2-2/1.png" alt="rdspg-fcj-labs">
+<img alt="rdspg-fcj-labs" src="/images/2/2-2/1.png">
 
 <div class="notices note" ><p>Bạn thấy 3 mục: Databases, Login/Group Roles, and Tablespaces.<br>
 Trong phần này, chúng ta sẽ tập trung vào <strong>Databases</strong>. Và chúng ta sẽ đề cập đến <strong>Login/Group</strong> trong phần sau.</p>
@@ -947,7 +947,7 @@ Trong phần này, chúng ta sẽ tập trung vào <strong>Databases</strong>. V
 </li>
 <li>
 <p>Tìm hiểu về Databases node.
-<img src="/images/2/2-2/2.png" alt="Databases">
+<img alt="Databases" src="/images/2/2-2/2.png">
 Theo thuật ngữ ngành, PostgreSQL instance <code>(rdspg-fcj-labs)</code> mà bạn đã tạo được gọi là <strong>cụm</strong> PostgreSQL. Một cụm chứa một hoặc nhiều <strong>cơ sở dữ liệu</strong>. Mặc dù users/roles của một cụm được chia sẻ nhưng không có dữ liệu nào được chia sẻ trên các cơ sở dữ liệu. Nói cách khác, khi khách hàng kết nối với một cụm, kết nối đó bắt buộc phải chỉ định cơ sở dữ liệu mà họ muốn làm việc và kết nối đó chỉ có thể hoạt động trong một cơ sở dữ liệu tại một thời điểm.<br>
 
 <div class="notices note" ><p>bạn sẽ thấy một số cơ sở dữ liệu trong cụm <code>pglab</code>.</p>
@@ -971,11 +971,11 @@ Theo thuật ngữ ngành, PostgreSQL instance <code>(rdspg-fcj-labs)</code> mà
 </li>
 <li>
 <p>Nhấp chuột phải vào <strong>Databases</strong> và chọn <strong>Create</strong>, sau đó nhấp vào <strong>Databases</strong>
-<img src="/images/2/2-2/3.png" alt="Create Databases"></p>
+<img alt="Create Databases" src="/images/2/2-2/3.png"></p>
 </li>
 <li>
 <p>Đặt tên cơ sở dữ liệu là <code>first_database</code> (nhưng chưa lưu)
-<img src="/images/2/2-2/4.png" alt="My Databases">
+<img alt="My Databases" src="/images/2/2-2/4.png">
 
 <div class="notices note" ><p>Mọi cơ sở dữ liệu đều có chủ sở hữu, đây là vai trò có toàn quyền kiểm soát cơ sở dữ liệu và có thể gán quyền cho các vai trò khác. Theo mặc định, khi cơ sở dữ liệu được tạo trong PostgreSQL, vai trò được sử dụng để tạo cơ sở dữ liệu sẽ trở thành chủ sở hữu của cơ sở dữ liệu đó. Trong PGAdmin, vai trò bạn đăng nhập thường sẽ được đặt làm chủ sở hữu cơ sở dữ liệu mà bạn hiện đang làm việc. Điều đáng nói là PostgreSQL cho phép bạn thay đổi chủ sở hữu của hầu hết các đối tượng cơ sở dữ liệu ngay cả sau khi chúng đã được tạo</p>
 </div>
@@ -983,7 +983,7 @@ Theo thuật ngữ ngành, PostgreSQL instance <code>(rdspg-fcj-labs)</code> mà
 </li>
 <li>
 <p>Hãy nhấp vào tab <strong>Definition</strong>
-<img src="/images/2/2-2/5.png" alt="Definition"></p>
+<img alt="Definition" src="/images/2/2-2/5.png"></p>
 </li>
 </ol>
 <p>
@@ -991,12 +991,12 @@ Theo thuật ngữ ngành, PostgreSQL instance <code>(rdspg-fcj-labs)</code> mà
 </div>
 
 6. Nhấp vào tab <strong>SQL</strong>
-<img src="/images/2/2-2/6.png" alt="SQL"></p>
+<img alt="SQL" src="/images/2/2-2/6.png"></p>
 <p>Tab SQL hiển thị cho bạn bản xem trước của lệnh SQL được tạo mà pgAdmin sẽ chạy.</p>
 <ol start="7">
 <li>Click <strong>Save</strong></li>
 <li>Tìm cơ sở dữ liệu mới của bạn trong trình điều hướng và mở rộng nó.
-<img src="/images/2/2-2/7.png" alt="SQL"></li>
+<img alt="SQL" src="/images/2/2-2/7.png"></li>
 </ol>
 <h4 id="tìm-hiểu-về-schemas">Tìm hiểu về Schemas</h4>
 <p>Cơ sở dữ liệu chứa một hoặc nhiều <strong>Schemas</strong> được đặt tên, lần lượt chứa các bảng và các đối tượng khác như dạng views và functions. Trong PostgreSQL, các đối tượng trong một Schemas có thể có các chủ sở hữu khác nhau và quyền sở hữu Schemas đó không phụ thuộc vào tên lược đồ.</p>
@@ -1014,15 +1014,15 @@ Theo thuật ngữ ngành, PostgreSQL instance <code>(rdspg-fcj-labs)</code> mà
 <ol>
 <li>
 <p>Click vào <strong>Schemas</strong> và xem các <strong>public schema</strong> mặc định.</p>
-<p><img src="/images/2/2-2/8.png" alt="Schema"></p>
+<p><img alt="Schema" src="/images/2/2-2/8.png"></p>
 </li>
 <li>
 <p>Nhấp chuột phải vào <strong>Schemas</strong> và chọn <strong>Create</strong>, sau đó nhấp vào <strong>Schema</strong>.</p>
-<p><img src="/images/2/2-2/9.png" alt="create schema"></p>
+<p><img alt="create schema" src="/images/2/2-2/9.png"></p>
 </li>
 <li>
 <p>Đặt tên cho schema là <code>first_schema</code></p>
-<p><img src="/images/2/2-2/10.png" alt="named schema"></p>
+<p><img alt="named schema" src="/images/2/2-2/10.png"></p>
 </li>
 </ol>
 
@@ -1499,19 +1499,19 @@ Việc tham chiếu các đối tượng thông qua các tên Đủ điều ki�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.min.js?1711394734"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1711394734"></script>
-    <script src="/js/jquery.sticky.js?1711394734"></script>
-    <script src="/js/featherlight.min.js?1711394734"></script>
-    <script src="/js/highlight.pack.js?1711394734"></script>
+    <script src="/js/clipboard.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733824272"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733824272"></script>
+    <script src="/js/jquery.sticky.js?1733824272"></script>
+    <script src="/js/featherlight.min.js?1733824272"></script>
+    <script src="/js/highlight.pack.js?1733824272"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1711394734"></script>
-    <script src="/js/learn.js?1711394734"></script>
-    <script src="/js/hugo-learn.js?1711394734"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733824272"></script>
+    <script src="/js/learn.js?1733824272"></script>
+    <script src="/js/hugo-learn.js?1733824272"></script>
 
-    <link href="/mermaid/mermaid.css?1711394734" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1711394734"></script>
+    <link href="/mermaid/mermaid.css?1733824272" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733824272"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
