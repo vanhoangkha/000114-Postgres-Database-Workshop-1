@@ -1,4 +1,4 @@
-# 🐘 PostgreSQL Workshop 1
+# PostgreSQL Workshop 1
 
 PostgreSQL database fundamentals on AWS RDS.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series.
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000114-Postgres-Database-Workshop-1/)**
+**[Start the workshop](https://vanhoangkha.github.io/000114-Postgres-Database-Workshop-1/)**
 
 ## Prerequisites
 
